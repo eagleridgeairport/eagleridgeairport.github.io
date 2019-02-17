@@ -43,12 +43,13 @@
   <script>
   var header = document.getElementsByTagName('header')[0];
   var openMenu = document.getElementById('openMenu');
+  var height = "50px";
   openMenu.addEventListener('click', function() {
-    if (window.getComputedStyle(header).height === "65px") {
+    if (window.getComputedStyle(header).height === height) {
       header.style.height = "auto";
     }
     else {
-      header.style.height = "65px";
+      header.style.height = height;
     }
   }, false);
 
