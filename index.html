@@ -44,23 +44,15 @@
   var header = document.getElementsByTagName('header')[0];
   var openMenu = document.getElementById('openMenu');
   var height = "50px";
-
-  function menu(closeOnly = false) {
-    if (window.getComputedStyle(header).height === height && !closeOnly) {
+  openMenu.addEventListener('click', function() {
+    if (window.getComputedStyle(header).height === height) {
       header.style.height = "auto";
     }
     else {
       header.style.height = height;
     }
-  }
+  }, false);
 
-  openMenu.addEventListener('click', menu(), false);
-  /**
-  var menuItems = document.querySelectorAll(".menuItems");
-  for (var i = 0; i < menuItems.length; i++) {
-    menuItems[i].addEventListener('click', menu(true), false);
-  }
-  **/
   smoothScroll.init();
   </script>
 </body>
