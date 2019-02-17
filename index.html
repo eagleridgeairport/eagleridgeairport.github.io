@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <title>Eagle Ridge Website</title>
+  <link rel="shortcut icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAMAAADX9CSSAAAAq1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0NbREAAAAOHRSTlMAAQIDBAgJChESFBUaHCEmKCo2ODk6PD1ESVBRXF1fZmeDiImMlZidoqOltbq+2dre4OLt7/f5+3NyVpcAAADJSURBVChTbdDXAoIwDAXQVMBqXbgXbhRxIO78/5fZkmJBuS8Nh5SUAvxHeJ71r3aAiJ4s2Hwk2Jd5hORsK9dXOKmXEo4VowBYY5rjrCmIA9nhRvibyFZb2fiR55jrWdbyXcQy5Y3xKmQjTqk3cq4PKDMtZtwXMz6JOn6Pa45pRkVx3zTGXCTrQHmYYX0pq+Q7iwxDWf3gjQa07olz0+XQC+ds3FJ31dandNSOHtVjWS60Q0s++FSyC15rqcMSsatLd2eDyWEIuXwA9301fvmi/V4AAAAASUVORK5CYII=" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <meta name="referrer" content="no-referrer" />
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <script type="text/javascript" src="https://cdn.rawgit.com/cferdinandi/smooth-scroll/dd0553ff80213e42c47500f2e47843f53eebf289/src/js/smooth-scroll.js"></script>
+</head>
+<body>
+  <header>
+    <ul>
+    </ul>
+  </header>
+  <div class="welcome">
+    <div class="welcomeMessage">
+    </div>
+  </div>
+  <main>
+  </main>
+  <footer>Eagle Ridge Airport (NK09) Website</footer>
+  <script>
+  var header = document.getElementsByTagName('header')[0];
+  var openMenu = document.getElementById('openMenu');
+  openMenu.addEventListener('click', function() {
+    if (window.getComputedStyle(header).height === "65px") {
+      header.style.height = "auto";
+    }
+    else {
+      header.style.height = "65px";
+    }
+  }, false);
+
+  smoothScroll.init();
+  </script>
+</body>
+</html>

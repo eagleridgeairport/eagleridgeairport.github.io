@@ -1,0 +1,93 @@
+/** NK09 Stylesheet **/
+body {
+  background: url("./background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 65px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0px 100px 0px 100px;
+  color: white;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#mobile {
+  display: none;
+}
+@media (max-width: 600px) {
+  #mobile {
+    display: initial;
+  }
+  header {
+    padding: 0px 10% !important;
+  }
+  article {
+    padding: 25px 10% !important;
+  }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li a {
+  float: left;
+  padding: 23px 25px;
+  color: white;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: grey;
+}
+.selected {
+  background-color: black;
+}
+li h2 {
+  float: left;
+  display: block;
+  margin: 18px 25px 0px 0px;
+  color: white;
+}
+
+/* Content */
+.welcome {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcomeMessage {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1, h2 {
+  margin: 0;
+}
+article {
+  background-color: white;
+  padding: 25px 100px;
+}
+article:not(:last-child) {
+  background-clip: padding-box;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 0.8em;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
