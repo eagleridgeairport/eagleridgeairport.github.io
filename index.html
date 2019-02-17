@@ -39,12 +39,13 @@
       <p>Nam facilisis finibus sapien, non facilisis tortor venenatis a. Ut malesuada lacinia ligula non elementum. Phasellus metus est, pulvinar eget porta ut, congue bibendum nunc. Nulla congue elit lectus, quis rhoncus metus dapibus et. Praesent vel pharetra arcu, vel fringilla eros. Nunc ut orci consectetur, venenatis sem eget, ultrices libero. In fringilla mauris ut consectetur blandit. Nullam a gravida velit, sit amet consectetur lorem. Donec rutrum aliquet euismod. Fusce erat leo, porttitor consequat arcu condimentum, tincidunt dictum quam. Donec eget sollicitudin enim. Donec scelerisque egestas arcu non efficitur.</p>
     </article>
   </main>
-  <footer>Eagle Ridge Airport (NK09) Website</footer>
+  <footer>This is an unofficial fanbase website for Eagle Ridge Airport (NK09) located in NY. - <a style="color:white;" href="disclaimer.html">Disclaimer</a></footer>
   <script>
   var header = document.getElementsByTagName('header')[0];
   var openMenu = document.getElementById('openMenu');
   var height = "50px";
   openMenu.addEventListener('click', function() {
+    alert("here");
     if (window.getComputedStyle(header).height === height) {
       header.style.height = "auto";
     }

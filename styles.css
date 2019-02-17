@@ -9,7 +9,6 @@ body {
 /* Header */
 header {
   background-color: rgba(0, 0, 0, 0.7);
-  height: 50px;
   width: 100%;
   position: fixed;
   left: 0;
@@ -27,10 +26,18 @@ header {
     display: initial;
   }
   header {
+    height: 50px;
     padding: 0px 10% !important;
+    position: relative;
+    left: auto;
+    top: auto;
   }
   article {
     padding: 25px 10% !important;
+  }
+  .welcomeMessage {
+    position: relative;
+    top: -50px;
   }
 }
 ul {
